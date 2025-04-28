@@ -1,0 +1,92 @@
+/* Custom CSS for the header */
+.header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  background: linear-gradient(135deg, #ffffff, #f8f9fa); 
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  margin-left: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50; /* Dark blue-gray for better contrast */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Move nav items to the right */
+}
+
+.nav-item {
+  margin-left: 15px; /* Add spacing between nav items */
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #2c3e50; /* Dark blue-gray for better contrast */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover transition */
+}
+
+.nav-link:hover {
+  color: #e74c3c; /* Red color for hover effect */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+.btn-outline-primary {
+  border-color: #3498db; /* Bright blue for outline button */
+  color: #3498db;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+.btn-outline-primary:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #3498db; /* Bright blue for primary button */
+  border-color: #3498db;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth hover transition */
+}
+
+.btn-primary:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  border-color: #2980b9;
+}
+
+/* Additional Styling for Attractiveness */
+.navbar {
+  padding: 1rem 0; /* Add padding to the navbar */
+}
+
+.navbar-toggler {
+  border: none; /* Remove default border */
+}
+
+.navbar-toggler:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+/* Add a subtle animation to the logo */
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+  transform: rotate(10deg); /* Rotate logo slightly on hover */
+}
+
+/* Add a gradient background to the buttons */
+.btn-gradient {
+  background: linear-gradient(135deg, #3498db, #2980b9); /* Gradient for buttons */
+  border: none;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}

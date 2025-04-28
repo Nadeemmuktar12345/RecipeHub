@@ -1,0 +1,201 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+  }
+  
+  /* Logo */
+  .logo img {
+    height: 50px;
+  }
+  
+  /* Navigation Menu */
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .navbar .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .search-bar button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #ff8c42;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #ff6f61;
+  }
+  
+  /* Mobile Menu Toggle */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #ff6f61;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar.active {
+      display: flex;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .search-bar {
+      display: none;
+    }
+  }
+  /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Ingredients Form Section */
+  .ingredients-form {
+    position: relative;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Overlay for Better Readability */
+  .ingredients-form .overlay {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  /* Form Group Styles */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .ingredients-form button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .ingredients-form button:hover {
+    background-color: #ff8c42;
+  }
+  
+  /* Ingredients List Section */
+  .ingredients-list {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .ingredients-list h2 {
+    margin-bottom: 20px;
+    color: #ff6f61;
+  }
+  
+  .ingredients-card {
+    background-color: #fff3f2;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .ingredients-card ul {
+    margin-left: 20px;
+    color: #555;
+  }
